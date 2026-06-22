@@ -1,7 +1,11 @@
 import { useState } from "react";
+import ChildComponent from "./ChildComponent.jsx";
+import SiblingComponent from "./SiblingComponent.jsx";
+
 
 const ParentComponent = () => {
   const [counter, setCounter] = useState(0);
+  const [name, setName] = useState('Настя');
   console.log(counter);
 
   return (
@@ -15,6 +19,14 @@ const ParentComponent = () => {
       <button onClick={() => setCounter((counter) => counter - 1)}>
         Уменьшить
       </button>
+
+    <ChildComponent 
+      name={name} 
+      currentCount ={counter}
+      updateCount ={setCounter}
+    />
+
+    <SiblingComponent />
     </>
   );
 };

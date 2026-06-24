@@ -1,16 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import Button from "./Button.jsx";
-import HideText from "./HideText.jsx";
-import Imput from "./Input.jsx";
-import ColorButton from "./ColorButton.jsx";
+import App from "./App.jsx";
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Button />
-    <HideText />
-    <Imput />
-    <ColorButton />
+    <App />
   </StrictMode>,
 );

@@ -6,7 +6,6 @@ const UserProfile = () => {
     age: 25,
     isActive: true,
     });
-    console.log(user)
 
     return (
         <>

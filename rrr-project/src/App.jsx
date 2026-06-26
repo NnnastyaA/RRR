@@ -5,6 +5,7 @@ import heroImg from "./assets/hero.png";
 import "./App.css";
 import UserProfile from "./assets/components/UserProfile.jsx";
 import TaskList from "./assets/components/TaskList.jsx";
+import ShoppingBacket from "./assets/components/ShoppingBacket.jsx";
 
 function App() {
     return (
@@ -12,6 +13,8 @@ function App() {
             <UserProfile />
             <hr></hr>
             <TaskList />
+            <hr></hr>
+            <ShoppingBacket />
         </>
     );
 }

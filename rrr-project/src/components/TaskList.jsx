@@ -18,8 +18,9 @@ const TaskList =() => {
                     </li>
                 ))}
             </ul>
-            <button onClick={() => setTasks([...tasks, taskArr[Math.floor(Math.random() * taskArr.length)]])}>Добавить задачу</button>
-            <button onClick ={() => setTasks(tasks.slice(0, -1))}>Удалить последнюю задачу</button>
+            <button onClick={() => setTasks((prevTasks) => [...prevTasks, taskArr[Math.floor(Math.random() * taskArr.length)]])}>Добавить задачу</button>
+            <button onClick ={() => setTasks((prevTasks) => prevTasks.slice(0, -1))}>Удалить последнюю задачу</button>
+
         </>
     )
 }

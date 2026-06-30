@@ -11,8 +11,8 @@ const ShoppingBacket = () => {
             {cart.map((item) => (
                 <div key={item.id}>
                     <h3 >{item.title} (Кол-во: {item.count})</h3>
-                    <button onClick={() => setCart(cart.map((cartItem) => cartItem.id === item.id ? { ...cartItem, count: cartItem.count + 1 } : cartItem))}>+1</button>
-                    <button onClick={() => setCart(cart.filter((cartItem) => cartItem.id !== item.id))}>Удалить</button>
+                    <button onClick={() => setCart((prevCart) => prevCart.map((cartItem) => cartItem.id === item.id ? { ...cartItem, count: cartItem.count + 1 } : cartItem))}>+1</button>
+                    <button onClick={() => setCart((prevCart) => prevCart.filter((cartItem) => cartItem.id !== item.id))}>Удалить</button>
                  </div>
             ))}
             <button onClick={() => setCart([])}>Очистить корзину</button>

@@ -3,9 +3,9 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
-import UserProfile from "./assets/components/UserProfile.jsx";
-import TaskList from "./assets/components/TaskList.jsx";
-import ShoppingBacket from "./assets/components/ShoppingBacket.jsx";
+import UserProfile from "./components/UserProfile.jsx";
+import TaskList from "./components/TaskList.jsx";
+import ShoppingBacket from "./components/ShoppingBacket.jsx";
 
 function App() {
     return (
